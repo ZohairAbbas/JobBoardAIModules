@@ -11,7 +11,7 @@ from collections import Counter
 
 def words(text): return re.findall(r'\w+', text.lower())
 
-WORDS = Counter(words(open('data_corpus.txt').read()))
+WORDS = Counter(words(open('data-corpus.txt').read()))
 # print(len(WORDS))
 # print(sum(WORDS.values()))
 
