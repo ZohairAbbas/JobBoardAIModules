@@ -24,3 +24,37 @@ word:  telented corrected_word:  talented
 word:  stuning corrected_word:  stunning
 word:  seamles corrected_word:  seamless
 ```
+
+## Grammar Checker
+
+Grammar Checker uses Gramformer library which is a pre-trained ML model and uses Pytorch transformers for detecting grammatical errors.
+
+- jd.txt: Test file, *make changes here to test Grammar Checker.*
+- requirements.txt: Contains all the dependencies required for this library.
+- test.py: Python script for Grammar Checker.
+
+### Usage:
+
+- Create a new conda environment
+```bash
+conda create -n gramformer
+```
+- Activate gramformer environment
+```bash
+conda activate gramformer
+```
+- Install all dependencies
+```bash
+pip3 install -r requirements.txt
+```
+-Once everything is setup, run the test.py file for Grammar Checking
+```bash
+python3 test.py
+```
+```bash
+[Gramformer] Grammar error correct/highlight model loaded..
+----------------------------------------------------------------------------------------------------
+[Incorrect]   Proficient in use Adobe XD and Figma to design user interfaces.
+[Correction]  Proficient in using Adobe XD and Figma to design user interfaces.
+----------------------------------------------------------------------------------------------------
+```
