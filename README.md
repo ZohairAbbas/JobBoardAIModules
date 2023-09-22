@@ -58,3 +58,24 @@ python3 test.py
 [Correction]  Proficient in using Adobe XD and Figma to design user interfaces.
 ----------------------------------------------------------------------------------------------------
 ```
+
+## Foul Language Detection
+
+DistilBERT is a transformer model that performs sentiment analysis. 
+The model is fine-tuned on Reddit posts for classifying text as SFW and NSFW. 
+
+The model is a fine-tuned version of DistilBERT.
+
+It was fine-tuned on 19604 Reddit posts pulled from the Comprehensive Abusiveness Detection Dataset.
+
+- foul-checker.py: Python script for Foul Language Detection
+
+### Usage:
+
+```bash
+python3 foul-checker.py
+```
+```
+"This job is for people from EU and US. We don't want Asians, they suck at Maths lol."
+[{'label': 'NSFW', 'score': 0.9757649302482605}]
+```
